@@ -1,25 +1,26 @@
 #clg-evename{
-    color :#cd279a;
+    color :#dee2ea;
     font-family:Andale Mono, monospace;
     text-align:center;
-   
-    
     animation-name:ChngeSize;
-    font-size: 24px;
-    animation-timing-function: linear;
+    font-size: 50px;
+    
     
 }
 .log-ht{
 	height: 110px;
 }
-@keyframes ChngeSize{
-	0% {font-size: 12px;}
-	 50% {font-size:18px;}
-	 100% {font-size :24px;}
+.box{
+	
+	height:50px;
+	font-size: 24px;
+	position: fixed;
+    right:25px;
+    z-index: 1;
+    background: none;
 }
-
 .logo{
-	background: black;
+	
 	top:0px;
 	width : 100%;
 	height:120px;
@@ -28,7 +29,7 @@
 	position: absolute;
 }
 .eventbox{
-    height: 400px;
+    height: 500px;
 	border: 2px solid #4db3cc;
 	border-radius: 20px;	
 }
@@ -50,4 +51,75 @@ footer{
         margin-left: auto;
         margin-right: auto;
 
+}
+.body{
+   background: url("https://i.pinimg.com/originals/0f/d2/17/0fd21758eb44841974b0dada1f86bf8f.jpg");
+}
+.eve-list{
+	font-size: 25px;
+	color: white;
+	list-style-type: none;
+
+}
+.eve-list li a {
+	text-decoration:none;
+	color:#8ab7de;
+
+}
+.eve-list li{
+	list-style-type: none;
+	margin-top: 20px;
+	color:#46a3f3;
+}
+.eve-list li :hover{
+	font-size: 40px;
+	transition: 0.5s;
+	cursor: pointer;
+	color: white;
+
+}
+.custstyle{
+	font-size: 25px;
+	margin-left:2%;
+	margin-top:10px;
+}
+.sidenavba{
+    
+	height:100%;
+  width: 0px; 
+  position: fixed; 
+ color:white;
+  left: 0;
+   top :0;
+  background-color:black; 
+  transition: 0.1s;
+  font-size: 18px;
+  overflow-x: hidden;
+ 
+
+
+}
+.sidenavba ul li{
+	list-style-type: none;
+   margin-top: 25px;
+	transform: translateX(-15px);
+	font-family: cursive;
+	font-size: 24px;
+}
+.opennav{
+	background:none;
+	border:none;
+	outline: 0;
+	color: white;
+
+}
+.opennav:hover{
+	cursor: pointer;
+	
+	border-radius: 25px;
+	z-index: 1;
+}
+.sidenavba ul a {
+	text-decoration: none;
+	color: white;
 }
